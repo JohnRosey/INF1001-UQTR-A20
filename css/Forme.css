@@ -1,0 +1,128 @@
+
+header {
+	border: solid black 1px;
+	border-radius: 5px;
+	overflow: auto;				/* Permet de conserver tous les éléments dans le block lorsque l'on rapetisse la fenêtre */
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+  }
+  .tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	left: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+img {
+	height: 100px;
+	padding: 20px;
+}
+
+h1 {
+	line-height: 100px;
+	padding-right:10px;
+	float:right;
+	font-family: "Yatra One";
+}
+
+nav {
+	margin-top: 10px;
+	float:left;
+	width:200px;
+}
+
+nav ul {
+	list-style-type: none;
+	border: solid black 1px;
+	border-radius: 5px;
+	margin-top: 0px;
+	padding-left:0px;
+	cursor:pointer;
+}
+
+nav ul li {
+	margin-left: 0px;
+	border-bottom: solid black 1px;
+	padding: 10px;
+}
+
+nav ul li:nth-child(3) {
+	border: none;
+}
+
+nav ul li:hover {
+	color:white;
+	background-color: black;
+	font-weight:bold;
+}
+
+section {
+	border: solid black 1px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-left: 210px;
+	margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	color:white;
+	background-color: gray;
+}
+
+td:nth-child(3n + 1) {
+	text-align: center;
+}
